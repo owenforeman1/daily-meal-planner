@@ -8,13 +8,15 @@ h1 {
   color: white;
 }
 
-.hero-body {
+.hero.is-danger {
   justify-content: center;
   flex-grow: 0;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
-  margin-right: 25rem;
-  margin-left: 25rem;
+  /* margin-right: 25rem;
+  margin-left: 25rem; */
+  background: url(./images/food1.jpeg);
+  background-size:cover;
 }
 
 .buttonIn {
@@ -24,4 +26,7 @@ h1 {
 button {
   position: relative;
 }
+
+ 
+  
 
