@@ -13,7 +13,38 @@ h1 {
   flex-grow: 0;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
-  background: url(./images/food1.jpeg);
+  /* margin-right: 25rem;
+  margin-left: 25rem; */
+  background: url(./images/food-background.jpg);
   background-size:cover;
-  
 }
+
+.title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2.25rem;
+}
+
+/* .buttonIn {
+  position: relative;
+}
+
+.in {
+  position: absolute;
+} */
+
+.has-text-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  max-width: 33%;
+}
+
+
+ 
+  
+
