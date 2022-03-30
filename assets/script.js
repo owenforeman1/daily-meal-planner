@@ -64,3 +64,12 @@ console.log(fetchResponse);
 // var thumbnails = data.hits[i].recipe.images.THUMBNAIL;
 // var label = data.hits[i].recipe.label;
 // var ingredients = data.hits[i].recipe.ingredientLines[i];
+
+let btnSwitch = document.getElementById("displayPage")
+
+function nextPage() {
+  window.location.href="./recipe.html"
+}
+
+btnSwitch.addEventListener('click', nextPage)
+

@@ -1,0 +1,16 @@
+.navbar {
+  background-color: black;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.hero.is-danger {
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+  /* margin-right: 25rem;
+  margin-left: 25rem; */
+  background: url(./images/second-page-img.png.jpg);
+  background-size:cover;
+}
