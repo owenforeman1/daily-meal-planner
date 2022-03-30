@@ -60,6 +60,13 @@ var fetchResponse = fetch(inputUrl)
 console.log(fetchResponse);
 
 
+// recipeArray = data.hits;
+
+// var recipes = data.hits[i];
+// var thumbnails = data.hits[i].recipe.images.THUMBNAIL;
+// var label = data.hits[i].recipe.label;
+// var ingredients = data.hits[i].recipe.ingredientLines[i];
+
 let btnSwitch = document.getElementById("displayPage")
 
 function nextPage() {
