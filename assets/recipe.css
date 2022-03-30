@@ -4,6 +4,10 @@
   font-size: 36px;
 }
 
+h1 {
+  color: white;
+}
+
 .hero.is-danger {
   justify-content: center;
   flex-grow: 0;
