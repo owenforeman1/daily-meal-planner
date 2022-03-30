@@ -56,3 +56,13 @@ var fetchResponse = fetch(inputUrl)
     console.log(data);
   });
 console.log(fetchResponse);
+
+
+let btnSwitch = document.getElementById("displayPage")
+
+function nextPage() {
+  window.location.href="./recipe.html"
+}
+
+btnSwitch.addEventListener('click', nextPage)
+
