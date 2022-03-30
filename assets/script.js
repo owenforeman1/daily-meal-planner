@@ -60,7 +60,7 @@ var fetchResponse = fetch(inputUrl)
 console.log(fetchResponse);
 
 
-
+// recipeArray = data.hits;
 
 // var recipes = data.hits[i];
 // var thumbnails = data.hits[i].recipe.images.THUMBNAIL;
