@@ -19,6 +19,8 @@ h1 {
   background-size:cover;
 }
 
+
+
 .title {
   font-size: 3rem;
 }
@@ -43,6 +45,12 @@ h1 {
 .input {
   max-width: 33%;
 }
+
+.input.is-large.protein {
+  margin: 0;
+}
+
+
 
 
  
