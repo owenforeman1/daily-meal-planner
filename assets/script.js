@@ -25,6 +25,7 @@ function getMapApi() {
     });
 }
 
+
 buttonLocation.addEventListener("click", getMapApi);
 
 var foodAPIKey = "f1d8bb5060f667390aea5bdedc8729b1";
