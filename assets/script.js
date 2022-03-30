@@ -53,3 +53,9 @@ var fetchResponse = fetch(inputUrl)
     console.log(data);
   });
 console.log(fetchResponse);
+
+
+//todo click info for meal, take you to next html page
+//todo but for city/zip on second html doc, with recipes
+//todo
+//todo
