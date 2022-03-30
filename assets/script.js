@@ -5,6 +5,7 @@ var buttonLocation = document.getElementById("placeSearch")
 // sort = drop down
 // enter city/zip then enter what you are looking for ie grocery store
 // then gives closest locations 
+// pops up when you get food list
 
 function getMapApi() {
   // replace `octocat` with anyone else's GitHub username
@@ -12,9 +13,10 @@ function getMapApi() {
   cityString = document.getElementById("enterLocation").value;
   console.log({cityString});
   fetch(
-    "https://www.mapquestapi.com/search/v4/place?q=" + cityString + "&key= "+ mapQuestApiKey + "&sort=relevance"
+    "https://www.mapquestapi.com/search/v4/place?q=" + cityString + "&key="+ mapQuestApiKey + "&sort=relevance"
   )
     .then(function (response) {
+      console.log("---------------");
       console.log(response);
       return response.json();
     })
@@ -24,6 +26,7 @@ function getMapApi() {
 }
 
 buttonLocation.addEventListener("click", getMapApi);
+
 var foodAPIKey = "f1d8bb5060f667390aea5bdedc8729b1";
 var foodID = "636d33a1";
 
