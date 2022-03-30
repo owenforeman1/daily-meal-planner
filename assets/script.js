@@ -56,3 +56,11 @@ var fetchResponse = fetch(inputUrl)
     console.log(data);
   });
 console.log(fetchResponse);
+
+
+
+
+// var recipes = data.hits[i];
+// var thumbnails = data.hits[i].recipe.images.THUMBNAIL;
+// var label = data.hits[i].recipe.label;
+// var ingredients = data.hits[i].recipe.ingredientLines[i];
