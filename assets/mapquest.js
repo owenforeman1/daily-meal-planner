@@ -7,7 +7,7 @@ var buttonLocation = document.getElementById("placeSearch");
 // then gives closest locations
 // pops up when you get food list
 
-function getMapApi() {
+function getMapApiInfo() {
   // replace `octocat` with anyone else's GitHub username
   var requestUrl = "https://api.github.com/users/octocat/repos";
   cityString = document.getElementById("enterLocation").value;
@@ -28,7 +28,11 @@ function getMapApi() {
       console.log(data.results);
     });
 }
+
+function mapdirApi(){
+  
+} 
 //http://www.mapquestapi.com/directions/v2/route?key=KEY&from=Clarendon Blvd,Arlington,VA&to=2400+S+Glebe+Rd,+Arlington,+VA
 
 
-buttonLocation.addEventListener("click", getMapApi);
+buttonLocation.addEventListener("click", getMapApiInfo);
