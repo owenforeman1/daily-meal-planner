@@ -11,8 +11,8 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
 
+  <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="#">
@@ -43,67 +43,57 @@
             input the amount of calories you want to eat below
           </p>
 
+          <form>
+            <div class="dropdown">
+              <div class="dropdown-trigger">
+                <input
+                  class="input is-large"
+                  id="mealType"
+                  type="text"
+                  placeholder="Meal of the Day..."
+                />
+              </div>
 
-    <div class="dropdown ">
-      <div class="dropdown-trigger">
-        <input
-              class="input is-large protein"
-              type="text"
-              placeholder="Meal of the Day..."
-            />
-      </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <hr class="dropdown-divider" />
+                  <a href="#" class="dropdown-item"> Eggs </a>
 
-      <div class="dropdown-menu" id="dropdown-menu" role="menu">
-        <div class="dropdown-content">
-          <hr class="dropdown-divider">
-          <a href="#" class="dropdown-item">
-          Eggs
-          </a>
+                  <hr class="dropdown-divider" />
+                  <a class="dropdown-item"> Chicken </a>
 
-          <hr class="dropdown-divider">
-          <a class="dropdown-item">
-          Chicken
-          </a>
+                  <hr class="dropdown-divider" />
+                  <a href="#" class="dropdown-item"> Ice Cream </a>
 
-          <hr class="dropdown-divider">
-          <a href="#" class="dropdown-item ">
-          Ice Cream
-          </a>
+                  <hr class="dropdown-divider" />
+                  <a href="#" class="dropdown-item"> Pizza </a>
 
-          <hr class="dropdown-divider">
-          <a href="#" class="dropdown-item">
-          Pizza
-          </a>
-      
-          <hr class="dropdown-divider">
-          <a href="#" class="dropdown-item">
-          Waffles
-          </a>
-        </div>
-      </div>
-    </div>
+                  <hr class="dropdown-divider" />
+                  <a href="#" class="dropdown-item"> Waffles </a>
+                </div>
+              </div>
+            </div>
 
-
-
-
-            
             <input
               class="input is-large foodpref"
               type="text"
               placeholder="Meal of the Day..."
+              id="dayMeal"
             />
             <input
               class="input is-large"
+              id="kcal"
               type="text"
               placeholder="Calorie Amount..."
             />
-            <button id="displayPage" class="button is-info">Normal</button>
-            <!-- <button class="button is-primary is-rounded in">Rounded</button> -->
-          </div>
+            <button type="button" id="displayPage" class="button is-info">
+              Normal
+            </button>
+          </form>
+          <!-- <button class="button is-primary is-rounded in">Rounded</button> -->
         </div>
       </div>
     </section>
-    
 
     <script src="./assets/js/script.js"></script>
   </body>
