@@ -15,6 +15,6 @@ h1 {
   padding: 3rem 1.5rem;
   /* margin-right: 25rem;
   margin-left: 25rem; */
-  background: url(./images/second-page-img.png.jpg);
+  background-image: url(../images/second-page-img.jpg);
   background-size:cover;
 }
