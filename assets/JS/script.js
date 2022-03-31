@@ -1,3 +1,7 @@
+<<<<<<< HEAD:assets/script.js
+=======
+
+>>>>>>> 272686fee840ab2c491b76a61d8f40bcf63f2e5c:assets/JS/script.js
 var foodAPIKey = "f1d8bb5060f667390aea5bdedc8729b1";
 var foodID = "636d33a1";
 
