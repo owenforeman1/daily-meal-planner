@@ -36,16 +36,20 @@
 
 recipeArray = data.hits;
 
-var recipes = data.hits[i];
-var thumbnails = data.hits[i].recipe.images.THUMBNAIL;
-var label = data.hits[i].recipe.label;
-var ingredients = data.hits[i].recipe.ingredientLines[i];
 
-var card = $("<div>").addClass("card");
-var header = $("<h3>").addClass("card-header").text(label);
-var body = $("<div>").addClass("card-content");
-var p1 = $("<p>").addClass("card-content").text();
-var p2 = $("<p>").addClass("card-text").text();
 
+
+body = document.body;
 var cardEL = document.createElement("div");
-cardEL.setAttribute("class", "card-header")
+cardEL.setAttribute("class", "card");
+var cardHeadEl = document.createElement("div");
+cardHeadEl.setAttribute("class", "card-header");
+var cardContentEl = document.createElement("div");
+cardContentEl.setAttribute("class", "card-content");
+var p1 = document.createElement("p");
+var p2 = document.createElement("p");
+
+body.appendChild(cardEL);
+cardEL.appendChild(cardHeadEl);
+cardHeadEl.appendChild(cardContentEl);
+p1.append
