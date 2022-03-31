@@ -1,0 +1,58 @@
+.navbar {
+  background-color: black;
+  justify-content: center;
+  font-size: 36px;
+}
+
+h1 {
+  color: white;
+}
+
+.hero.is-danger {
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 3rem 1.5rem;
+  /* margin-right: 25rem;
+  margin-left: 25rem; */
+  background: url(../images/food-background.jpg);
+  background-size:cover;
+}
+
+
+
+.title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2.25rem;
+}
+
+/* .buttonIn {
+  position: relative;
+}
+
+.in {
+  position: absolute;
+} */
+
+.has-text-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  max-width: 33%;
+}
+
+.input.is-large.protein {
+  margin: 0;
+}
+
+
+
+
+ 
+  
+
