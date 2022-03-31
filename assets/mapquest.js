@@ -36,9 +36,13 @@ function groceryOptions(groceryStoreList) {
     var groceryDisplay = document.createElement("button");
     groceryDisplay.classList.add("button");
     groceryDisplay.innerText = groceryStoreList[i].name;
-    var groceryList = groceryStoreList[i];
-     recentSearchBtn.onclick = function () {
-       weatherCall(this.innerText);
+    var groceryLat = groceryStoreList[i].place.geometry.coordinates[1];
+    var groceryLon = groceryStoreList[i].place.geometry.coordinates[0];
+      // stores data
+      groceryDisplay.setAttribute("data-lat", groceryLat);
+      groceryDisplay.setAttribute("data-lon", groceryLon);
+     groceryDisplay.onclick = function () {
+       storeChosen(this.getAttribute("data-lat"), this.getAttribute("data-lon"));
        return false;
      };
      
@@ -52,9 +56,14 @@ function groceryOptions(groceryStoreList) {
   }
 }
 
-function storeChosen() {
- 
+function storeChosen(placeLat,placeLon) {
+  console.log(placeLat);
+  console.log(placeLon);
+ console.log("store click");
+var userLocation = document.getElementById("enterLocation").value;
+console.log(userLocation);
 }
+
 
 // directions api
 function mapDirApi() {
