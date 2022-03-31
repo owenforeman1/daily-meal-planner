@@ -19,9 +19,14 @@ h1 {
   background-size:cover;
 }
 
+.hero-body {
+  height: 5em;
+}
+
 .card {
   border: 1px solid black;
   margin-bottom: 5px;
+
 }
 .card-header {
   border: 1px solid black;
@@ -30,8 +35,10 @@ h1 {
 }
 
 .cardThumbnail {
-  align-self: center;
+  display: block;
+  margin-left: auto;
   height: 100px;
+  
 }
 
 h3 {
@@ -39,11 +46,14 @@ h3 {
   justify-content: center;
   font-weight: bold;
   border-right: 2px;
+
   /* margin-top: 15px;
   padding-left: 5px; */
 }
 .card-content {
   padding: 2px;
+  text-align: center;
+  
 }
 
 #shoppingList {
