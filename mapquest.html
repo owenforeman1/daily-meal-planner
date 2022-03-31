@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>map</title>
-  
-  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="./assets/mapquest.css" />
 </head>
-<h1>Map</h1>
-<input type="text" id="enterLocation" placeholder="Zipcode/market/grocery"/>
-  <button type="button" id="placeSearch" ></button> 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <h1>Daily Meal Planner</h1>
+    </a>
+</nav>
+
+<div>
+  <h2>Get directions to the nearest location</h2>
+</div>
+<br/>
+<div>
+  <input type="text" id="enterLocation" placeholder="Enter Zipcode or full address and town/state" />
+  <button type="button" id="placeSearch"></button>
+</div>
+<div id="groceryResults">
+
+</div>
+
 
 <body>
-<script src="./assets/js/mapquest.js"></script>
+  <script src="./assets/mapquest.js"></script>
 </body>
+
 </html>
