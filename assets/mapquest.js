@@ -56,29 +56,30 @@ function groceryOptions(groceryStoreList) {
   }
 }
 
+
+
+
+
 function storeChosen(placeLat,placeLon) {
   console.log(placeLat);
   console.log(placeLon);
  console.log("store click");
 var userLocation = document.getElementById("enterLocation").value;
 console.log(userLocation);
+// map directions api
+fetch(
+  "https://www.mapquestapi.com/staticmap/v5/map?start=" + userLocation + "&end=" + placeLat + "," + placeLon + "&size=600,400@2x&key=" + mapQuestApiKey)
+  .then(function (response) {
+    console.log("---------------");
+    console.log(response);
+     var groceryDisplay = document.createElement("img");
+     groceryDisplay.src = response.url;
+     document.getElementById("groceryResults").appendChild(groceryDisplay);
+    // return response.json();
+  });
 }
 
 
-// directions api
-function mapDirApi() {
-var requestUrl = "https://api.github.com/users/octocat/repos";
-  fetch("https://www.mapquestapi.com/directions/v2/route?key=" + mapQuestApiKey + "&from=Clarendon Blvd,Arlington,VA&to=2400+S+Glebe+Rd,+Arlington,+VA")
-  .then(function(response){
-    console.log("---------");
-    console.log(response);
-    return response.json();
-  })
-  .then(function(data){
-    console.log(data);
-  })
-} 
-// http://www.mapquestapi.com/directions/v2/route?key=KEY&from=Clarendon Blvd,Arlington,VA&to=2400+S+Glebe+Rd,+Arlington,+VA
 
 
 buttonLocation.addEventListener("click", getMapApiInfo);
