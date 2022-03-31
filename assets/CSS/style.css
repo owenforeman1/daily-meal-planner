@@ -15,7 +15,7 @@ h1 {
   padding: 3rem 1.5rem;
   /* margin-right: 25rem;
   margin-left: 25rem; */
-  background: url(./images/food-background.jpg);
+  background: url(../images/food-background.jpg);
   background-size:cover;
 }
 
