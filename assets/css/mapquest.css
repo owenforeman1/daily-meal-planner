@@ -1,0 +1,14 @@
+.navbar {
+  background-color: black;
+  justify-content: center;
+  font-size: 36px;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
