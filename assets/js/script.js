@@ -2,7 +2,6 @@ var foodAPIKey = "f1d8bb5060f667390aea5bdedc8729b1";
 var foodID = "636d33a1";
 var protein;
 body = document.body;
-var cardRowEl = document.getElementById("cardRow");
 var choiceOne = "";
 var choiceTwo = "";
 var choiceThree = "";
