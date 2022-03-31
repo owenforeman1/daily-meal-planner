@@ -1,5 +1,7 @@
 
 
+var recentSearch = JSON.parse(localStorage.getItem("recentSearches"))||[];
+
 
 
 
