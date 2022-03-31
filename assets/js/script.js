@@ -40,9 +40,6 @@ var fetchResponse = fetch(inputUrl)
     // var p1 = $("<p>").addClass("card-content").text();
     // var p2 = $("<p>").addClass("card-text").text();
 
-    // thumbnails.setAttribute("src", "recipe.images.Thumbnail.url");
-    // var thumbs = document.createElement("img");
-    // var thumbnails = recipeArray[i].recipe.images.THUMBNAIL;
     // var label = recipeArray[i].recipe.label;
 
     // var thumbnails = recipeArray[i].recipe.images.THUMBNAIL;
@@ -55,11 +52,12 @@ var fetchResponse = fetch(inputUrl)
         console.log(recipeEl);
         var ingredients = recipeArray[i].recipe.ingredientLines;
         console.log({ ingredients });
+        var thumbnails = recipeArray[i].recipe.images.THUMBNAIL.url;
+        console.log(thumbnails)
         for (var j = 0; j < ingredients.length; j++) {
           var ingList = ingredients[j];
           console.log({ ingList });
-          // }
-
+          
          
         }
 
@@ -72,6 +70,7 @@ var fetchResponse = fetch(inputUrl)
         cardsEL.setAttribute("class", "card");
         console.log(cardHeadEl);
         cardHeadEl.setAttribute("class", "card-header");
+        var cardLabel = document.createElement("h3");
         var cardContentEl = document.createElement("div");
         cardContentEl.setAttribute("class", "card-content");
         console.log(cardContentEl);
@@ -80,10 +79,17 @@ var fetchResponse = fetch(inputUrl)
         console.log(p1);
         cardRowEl.appendChild(cardsEL);
         cardsEL.appendChild(cardHeadEl);
-        cardHeadEl.textContent = label;
+        cardHeadEl.append(cardLabel);
+        cardLabel.textContent = label;
         cardHeadEl.appendChild(cardContentEl);
-        cardContentEl.appendChild(p1);
         p1.textContent = ingredients;
+        cardContentEl.append(p1);
+        var thumbs = document.createElement("img");        
+        thumbs.setAttribute("src", thumbnails);
+        thumbs.setAttribute("class", "cardThumbnail")
+        cardHeadEl.append(thumbs);
+    
+
       }
 
       // thumbnails.setAttribute("src", "recipe.images.Thumbnail.url");
