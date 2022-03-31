@@ -71,7 +71,7 @@ function storeChosen(placeLat, placeLon) {
       placeLat +
       "," +
       placeLon +
-      "&size=600,400@2x&key=" +
+      "&size=1000,400@2x&key=" +
       mapQuestApiKey
   ).then(function (response) {
     console.log("---------------");
