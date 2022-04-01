@@ -19,9 +19,12 @@ h1 {
   background-size:cover;
 }
 
-.hero-body {
-  height: 5em;
+.hero.is-fullheight {
+  min-height: 57vh;
 }
+
+
+
 
 .card {
   border: 1px solid black;
