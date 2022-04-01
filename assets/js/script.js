@@ -7,15 +7,7 @@ var choiceTwo = "";
 var choiceThree = "";
 var inputUrl = "";
 
-// // say choose a protein dropdown eggs, beans, chicken, bacon, turkey
-// var foodpref = document.getElementById("foodPreference").value;
 
-// // populate a box for each meal
-// var mealType = document.getElementById("idk").value;
-// // var breakfast =
-// // var lunch =
-// // var dinner =
-// var calCount = document.getElementById("calCount").value;
 
 var buttonEl = document.getElementById("displayPage");
 console.log(buttonEl);
@@ -45,23 +37,11 @@ function pageRecipe(url) {
     .then(function (data) {
       console.log(data);
 
-      //data only available in this function
+      
       console.log(fetchResponse);
 
-      //mike's work starts here
+      
 
-      //     var card = $("<div>").addClass("card");
-      // var header = $("<h3>").addClass("card-header").text(label);
-      // var body = $("<div>").addClass("card-content");
-      // var p1 = $("<p>").addClass("card-content").text();
-      // var p2 = $("<p>").addClass("card-text").text();
-
-      // thumbnails.setAttribute("src", "recipe.images.Thumbnail.url");
-      // var thumbs = document.createElement("img");
-      // var thumbnails = recipeArray[i].recipe.images.THUMBNAIL;
-      // var label = recipeArray[i].recipe.label;
-
-      // var thumbnails = recipeArray[i].recipe.images.THUMBNAIL;
 
       function getRecipe(recipeArray) {
         // array for recipes
@@ -78,6 +58,9 @@ function pageRecipe(url) {
             console.log({ ingList });
             // }
           }
+          var thumbnails = recipeArray[i].recipe.images.THUMBNAIL.url;
+          console.log(thumbnails);
+          // thumbs.setAttribute("src", "recipe.images.THUMBNAIL.url");
 
           // var ingString = JSON.stringify(ingredients);
           var label = recipeArray[i].recipe.label;
@@ -102,17 +85,7 @@ function pageRecipe(url) {
           p1.textContent = ingredients;
         }
 
-        // thumbnails.setAttribute("src", "recipe.images.Thumbnail.url");
-        // var thumbnails = document.createElement("img");
-        // console.log(thumbnails)
-        // // var recipes = recipeArray[i];
-        // var thumbnails = recipeArray[i].recipe.images.THUMBNAIL;
-
-        // // var recipes = recipeArray[i];
-        // // var ingredients = recipeArray[i].recipe.ingredientLines[i];
-
-        // cardHeadEl.append(thumbnails)
-        // console.log(cardHeadEl)
+        
 
         // //todo textContent 1st
       }
