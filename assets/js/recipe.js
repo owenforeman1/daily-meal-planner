@@ -3,7 +3,7 @@ var cardRowEl = document.getElementById("cardRow");
 
 var recipes = JSON.parse(localStorage.getItem("recipeArray"));
 console.log({ recipes });
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < 8; i++) {
   var recipeEl = recipes[i];
   console.log(recipeEl);
   var ingredients = recipes[i].recipe.ingredientLines;
